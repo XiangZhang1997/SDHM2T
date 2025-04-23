@@ -1,0 +1,58 @@
+model:
+  type: SAM2T
+
+  args:
+    {}
+
+# 20>40
+dataname:
+  type: DRIVE
+#  type: CHASEDB1
+#  type: STARE/first10
+#  type: STARE/4Folds/4fold 
+#  type: STARE/10Folds/10fold 
+#  type: IOSTAR
+#  type: RC_SLO
+
+#  type: DRIVE/cross_data
+#  type: STARE/first10/cross_data
+
+#  type: DRIVE/human
+#  type: CHASEDB1/human
+
+  args:
+    {}
+
+loss:
+  type: CE_DiceLoss
+  args:
+    {}
+
+optimizer:
+  type: AdamW
+  args:
+    lr: 0.0002
+    weight_decay: 0.00001
+
+lr_scheduler:
+  type: CosineAnnealingLR
+  args:
+    T_max: 40
+
+epochs: 20
+save_dir: /home/s1/ZX/job/Vessel/pretrained_weights/
+net_dir: /home/s1/ZX/job/Vessel/models/ves/net_fig/
+val_per_epochs: 1
+save_period: 1
+tensorboard: false
+threshold: 0.5
+threshold_low: 0.3
+DTI: false
+amp: false 
+tta: false
+CCC: true
+H: 64
+W: 64
+batch_size: 32
+heatmap: false
+Train: false
