@@ -26,7 +26,7 @@ This script is used for evaluating the trained model on test images.
 2. Configure the testing parameters in the script or via command-line arguments.
 3. Run the script using the following command:
     ```bash
-    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint-epoch20.pth" --show
+    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint.pth" --show
     ```
 
 ### `metrics.py`
@@ -46,7 +46,7 @@ This script calculates various evaluation metrics for the segmentation results.
     ```
 2. **Testing**: Evaluate your trained model:
     ```bash
-    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint-epoch20.pth" --show
+    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint.pth" --show
     ```
 3. **Metrics**: Calculate performance metrics:
     ```bash
