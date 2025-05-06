@@ -1,9 +1,9 @@
-# SDHM^2T——A Scale Direction Heteroid Micro to Macro Transition Network for Retinal Vessel Segmentation
+# SDHM<sup>2</sup>T——A Scale Direction Heteroid Micro to Macro Transition Network for Retinal Vessel Segmentation
 ![](https://img.shields.io/badge/license-MIT-blue)
-The official implementation of SDHM^2T
+The official implementation of SDHM<sup>2</sup>T
 
 ## Overview
-SDHM^2T is a project for vessel segmentation using deep learning techniques. This repository contains scripts for training, testing, and evaluating models on the retinal datasets.
+SDHM<sup>2</sup>T is a project for vessel segmentation using deep learning techniques. This repository contains scripts for training, testing, and evaluating models on the retinal datasets.
 
 ## Scripts
 
