@@ -1,9 +1,9 @@
-# SAM2T——A Lightweight yet Effective Scale-Aware Micro to Macro Transition Network for Retinal Vessel Segmentation
+# SDHM^2T——A Scale Direction Heteroid Micro to Macro Transition Network for Retinal Vessel Segmentation
 ![](https://img.shields.io/badge/license-MIT-blue)
-The official implementation of SAM2T
+The official implementation of SDHM^2T
 
 ## Overview
-SAM2T is a project for vessel segmentation using deep learning techniques. This repository contains scripts for training, testing, and evaluating models on the retinal datasets.
+SDHM^2T is a project for vessel segmentation using deep learning techniques. This repository contains scripts for training, testing, and evaluating models on the retinal datasets.
 
 ## Scripts
 
@@ -26,7 +26,7 @@ This script is used for evaluating the trained model on test images.
 2. Configure the testing parameters in the script or via command-line arguments.
 3. Run the script using the following command:
     ```bash
-    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SAM2T/checkpoint-epoch20.pth" --show
+    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint-epoch20.pth" --show
     ```
 
 ### `metrics.py`
@@ -46,7 +46,7 @@ This script calculates various evaluation metrics for the segmentation results.
     ```
 2. **Testing**: Evaluate your trained model:
     ```bash
-    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SAM2T/checkpoint-epoch20.pth" --show
+    python /home/s1/ZX/job/Vessel/test.py -dp "/home/s1/ZX/job/Vessel/datasets/DRIVE" -wp "/home/s1/ZX/job/Vessel/pretrained_weights/DRIVE/SDHM2T/checkpoint-epoch20.pth" --show
     ```
 3. **Metrics**: Calculate performance metrics:
     ```bash
